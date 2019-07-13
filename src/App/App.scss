@@ -1,20 +1,4 @@
-$primary-0: rgba( 21, 63,104,1);	// Main Primary color */
-$primary-1: rgba( 54, 99,142,1);
-$primary-2: rgba( 11, 80,147,1);
-$primary-3: rgba( 18, 41, 64,1);
-$primary-4: rgba(  3, 28, 52,1);
-
-$secondary-1-0: rgba(150, 21, 44,1);	// Main Secondary color */
-$secondary-1-1: rgba(206, 68, 92,1);
-$secondary-1-2: rgba(213,  0, 38,1);
-$secondary-1-3: rgba( 92, 21, 33,1);
-$secondary-1-4: rgba( 75,  0, 13,1);
-
-$tertiary-2-0: rgba(160,147, 22,1);	// Main Tertiary color */
-$tertiary-2-1: rgba(219,206, 72,1);
-$tertiary-2-2: rgba(227,206,  0,1);
-$tertiary-2-3: rgba( 98, 91, 22,1);
-$tertiary-2-4: rgba( 80, 73,  0,1);
+@import "./shared.scss";
 
 .App {
   text-align: center;
@@ -27,7 +11,7 @@ $tertiary-2-4: rgba( 80, 73,  0,1);
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: $white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
