@@ -1,9 +1,10 @@
 @import "../../shared";
 
-h1 {
-  color: $white;
-}
-
-body {
+.App-Footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   background-color: $primary-1;
+  color: $white;
+
 }
