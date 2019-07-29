@@ -1,15 +1,10 @@
 import React from 'react';
 import './Header.scss';
-
+import MainNav from './MainNav/MainNav.js'
 const Header = () => {
     return <div className={"App-Header"}>
-       <h1>I"M AN HEADER</h1>
-        <ul>
-            <li>Experience</li>
-            <li>Code</li>
-            <li>Music</li>
-            <li>Resume</li>
-        </ul>
+        <h1>Tyler <span>Briskie</span></h1>
+        <MainNav />
         <select>
             <option value="0" selected>Select A Theme</option>
             <option value="vaporwave">Vaporwave</option>
