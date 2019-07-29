@@ -3,7 +3,7 @@ import './Footer.scss';
 
 const Footer = () => {
     return <div className={"App-Footer"}>
-        <h1>I"M AN Footer ;)</h1>
+        <p>Created by Tyler Briskie in React - 2019</p>
     </div>
 };
 

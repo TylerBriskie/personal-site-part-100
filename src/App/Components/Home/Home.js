@@ -14,9 +14,13 @@ const Home = () => {
                     <p>Web Developer.</p>
                     <a href={'#Resume'}><button>Nice to meet you</button></a>
                     <ul className="Header_links">
-                        <li className="Header_link">WEB DEVELOPER</li>
-                        <li className="Header_link">MUSICIAN</li>
-                        <li className="Header_link">ABOUT</li>
+                        <a href={'#Experience'}><li className="Header_link">Experience</li></a>
+                        <a href={'#Skills'}><li className="Header_link">Skills</li></a>
+                        <a href={'#Projects'}><li className="Header_link">Projects</li></a>
+                        <a href={'#Education'}><li className="Header_link">Education</li></a>
+                        <a href={'#Contact'}><li className="Header_link">Contact</li></a>
+
+
                     </ul>
                 </div>
             }
