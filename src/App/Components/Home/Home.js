@@ -5,9 +5,6 @@ import StickyHeader from 'react-sticky-header';
 
 const Home = () => {
 
-    function scrollToProfile(){
-        console.log('i am scrolling');
-    }
     return <div className={"App-Home"}>
         <StickyHeader
             // This is the sticky part of the header.
@@ -15,7 +12,7 @@ const Home = () => {
                 <div className="Header_root">
                     <h1 className="Header_title"> TYLER BRISKIE</h1>
                     <p>Web Developer.</p>
-                    <button onClick={scrollToProfile}>Nice to meet you</button>
+                    <a href={'#Resume'}><button>Nice to meet you</button></a>
                     <ul className="Header_links">
                         <li className="Header_link">WEB DEVELOPER</li>
                         <li className="Header_link">MUSICIAN</li>
