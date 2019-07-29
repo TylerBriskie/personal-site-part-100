@@ -1,0 +1,18 @@
+@import "../../shared";
+
+.App-Section {
+  height: 99vh;
+  width: 100vw;
+  section{
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+  hr {
+    width: 50%;
+  }
+
+}
+.App-Section.dark {
+  background-color: $primary-1;
+  color: $white;
+}

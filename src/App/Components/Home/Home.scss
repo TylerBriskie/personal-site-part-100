@@ -65,12 +65,22 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
+            align-items: center;
             a {
               font-size: 75%;
               margin: 0 1em;
+              -webkit-transition: color .5s, font-size .5s;
+              -moz-transition: color .5s, font-size .5s;
+              -o-transition: color .5s, font-size .5s;
+              transition: color .5s, font-size .5s;
             }
-            a.active{
-              color: yellow;
+            a.active {
+              border-bottom: 3px solid navajowhite;
+              color: navajowhite;
+            }
+            a:hover{
+              font-size: 125%;
+              color: $tertiary-2-2;
             }
           }
       }

@@ -19,10 +19,10 @@ export default class Home extends Component {
                             <p>Web Developer.</p>
                             <Link className={"call-to-action"}
                                 activeClass={"active"}
-                                to={"Experience"}
+                                to={"Profile"}
                                 spy={true}
                                 smooth={true}
-                                offset={-100}
+                                offset={0}
                                 duration={350}
                             >
                                 Nice To Meet You
@@ -30,10 +30,18 @@ export default class Home extends Component {
 
                             <ul className="Header_links">
                                 <Link activeClass={"active"}
+                                      to={"Profile"}
+                                      spy={true}
+                                      smooth={true}
+                                      offset={0}
+                                      duration={350}>
+                                    Profile
+                                </Link>
+                                <Link activeClass={"active"}
                                       to={"Experience"}
                                       spy={true}
                                       smooth={true}
-                                      offset={-100}
+                                      offset={0}
                                       duration={350}>
                                     Experience
                                 </Link>
@@ -41,7 +49,7 @@ export default class Home extends Component {
                                       to={"Skills"}
                                       spy={true}
                                       smooth={true}
-                                      offset={-100}
+                                      offset={0}
                                       duration={350}>
                                     Skills
                                 </Link>
@@ -49,7 +57,7 @@ export default class Home extends Component {
                                       to={"Projects"}
                                       spy={true}
                                       smooth={true}
-                                      offset={-100}
+                                      offset={0}
                                       duration={350}>
                                     Projects
                                 </Link>
@@ -57,7 +65,7 @@ export default class Home extends Component {
                                       to={"Education"}
                                       spy={true}
                                       smooth={true}
-                                      offset={-100}
+                                      offset={0}
                                       duration={350}>
                                     Education
                                 </Link>
@@ -65,7 +73,7 @@ export default class Home extends Component {
                                       to={"Contact"}
                                       spy={true}
                                       smooth={true}
-                                      offset={-100}
+                                      offset={0}
                                       duration={350}>
                                     Contact
                                 </Link>
