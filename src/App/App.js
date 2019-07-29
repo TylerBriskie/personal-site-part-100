@@ -5,8 +5,6 @@ import Home from './Components/Home/Home.js';
 import Footer from './Components/Footer/Footer.js';
 
 function App() {
-
-    
   return (
     <div className="App">
       {/*<Header />*/}
@@ -15,6 +13,7 @@ function App() {
       {/*<Projects />*/}
       {/*<Music />*/}
       {/*<Contact />*/}
+      {/*<AppContainer />*/}
       <section id={"Home"}>
           <h1>LANDING PAGE</h1>
           <button>call to action</button>
@@ -47,15 +46,43 @@ function App() {
             <p>Dad didn't leave… When he comes back from the store, he's going to wave those pop-tarts right in your face! I'm a Spalding Gray in a Rick Dees world. Hi. I'm Troy McClure. You may remember me from such self-help tapes as "Smoke Yourself Thin" and "Get Some Confidence, Stupid!"</p>
             <p>And now, in the spirit of the season: start shopping. And for every dollar of Krusty merchandise you buy, I will be nice to a sick kid. For legal purposes, sick kids may include hookers with a cold. Look out, Itchy! He's Irish!</p>
         </section>
-        <section id={"Contact"}>
-            <h1>The Tires are the things</h1>
-            <h4>On your car that make contact with the road</h4>
+        <section id={"Education"}>
+            <h1>MUSIC PAGE</h1>
+            <button>call to action</button>
 
             <p>Yes! I am a citizen! Now which way to the welfare office? I'm kidding, I'm kidding. I work, I work. You don't win friends with salad. When I held that gun in my hand, I felt a surge of power…like God must feel when he's holding a gun.</p>
             <p>Dad didn't leave… When he comes back from the store, he's going to wave those pop-tarts right in your face! I'm a Spalding Gray in a Rick Dees world. Hi. I'm Troy McClure. You may remember me from such self-help tapes as "Smoke Yourself Thin" and "Get Some Confidence, Stupid!"</p>
             <p>And now, in the spirit of the season: start shopping. And for every dollar of Krusty merchandise you buy, I will be nice to a sick kid. For legal purposes, sick kids may include hookers with a cold. Look out, Itchy! He's Irish!</p>
         </section>
-      <Footer />
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <section id={"Contact"}>
+            <h3>Want to get in touch?</h3>
+            <a href="mailto:tylerbriskie@gmail.com"><h4>tylerbriskie@gmail.com</h4></a>
+
+
+        </section>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <Footer />
     </div>
   );
 }

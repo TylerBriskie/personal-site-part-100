@@ -48,7 +48,9 @@
   }
   .ReactStickyHeader_root.is-sticky{
     .ReactStickyHeader_fixed{
-
+          .call-to-action{
+            display: none;
+          }
           background-color: $primary-1;
           h1 {
             font-size: 120%;
@@ -63,9 +65,12 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            li {
+            a {
               font-size: 75%;
               margin: 0 1em;
+            }
+            a.active{
+              color: yellow;
             }
           }
       }
