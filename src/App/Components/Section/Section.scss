@@ -4,6 +4,9 @@
   height: 99vh;
   width: 100vw;
   section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 200px;
     margin-bottom: 200px;
   }

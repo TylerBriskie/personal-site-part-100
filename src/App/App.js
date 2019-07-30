@@ -4,7 +4,7 @@ import './App.scss';
 import Home from './Components/Home/Home.js';
 import Footer from './Components/Footer/Footer.js';
 import Section from './Components/Section/Section.js';
-
+import Skills from './Components/Skills/Skills.js';
 function App() {
   return (
     <div className="App">
@@ -31,16 +31,7 @@ function App() {
                 <p>And now, in the spirit of the season: start shopping. And for every dollar of Krusty merchandise you buy, I will be nice to a sick kid. For legal purposes, sick kids may include hookers with a cold. Look out, Itchy! He's Irish!</p>
             </section>
         </Section>
-    <Section sectionName={"Skills"}>
-        <section>
-            <h1>SKEELZ</h1>
-            <h6>Are you for real?</h6>
-            <h4>Groupie</h4>
-            <p>Dad didn't leave… When he comes back from the store, he's going to wave those pop-tarts right in your face! I'm a Spalding Gray in a Rick Dees world. Hi. I'm Troy McClure. You may remember me from such self-help tapes as "Smoke Yourself Thin" and "Get Some Confidence, Stupid!"</p>
-            <h5>This is an H5 ipsum</h5>
-            <p>And now, in the spirit of the season: start shopping. And for every dollar of Krusty merchandise you buy, I will be nice to a sick kid. For legal purposes, sick kids may include hookers with a cold. Look out, Itchy! He's Irish!</p>
-        </section>
-    </Section>
+        <Skills />
     <Section sectionName={"Projects"}>
 
         <section>
