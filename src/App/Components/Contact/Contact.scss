@@ -1,0 +1,30 @@
+@import "../../shared";
+
+.contact-info-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact-info {
+  margin: 1em;
+  p {
+    margin-bottom: 2em;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    text-align: center;
+    color: $primary-2;
+    text-decoration: none;
+    margin: 0 2em;
+    font-size: 75%;
+  }
+  img {
+    height: 50px;
+    width: 50px;
+  }
+
+}

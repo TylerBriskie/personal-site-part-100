@@ -3,7 +3,6 @@
 .App-Home{
   color: aliceblue;
   width: 100%;
-  height: 1000px;
 
   ul {
     list-style: none;
@@ -17,9 +16,13 @@
     display: block;
     background-image: url("../../../assets/HeroImageDark3.png");
     width: 100vw;
-    height: 1000px;
+    height: 100vh;
   }
+
   .ReactStickyHeader_root{
+    .ReactStickyHeader_midground{
+      height: 0px !important;
+    }
     .ReactStickyHeader_fixed{
       //-webkit-transition: background-color.5s;
       //-moz-transition: background-color .5s;
@@ -47,6 +50,7 @@
 
   }
   .ReactStickyHeader_root.is-sticky{
+
     .ReactStickyHeader_fixed{
           .call-to-action{
             display: none;

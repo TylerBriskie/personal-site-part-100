@@ -5,6 +5,7 @@ import Home from './Components/Home/Home.js';
 import Footer from './Components/Footer/Footer.js';
 import Section from './Components/Section/Section.js';
 import Skills from './Components/Skills/Skills.js';
+import Contact from './Components/Contact/Contact';
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,6 @@ function App() {
       {/*<Resume />*/}
       {/*<Projects />*/}
       {/*<Music />*/}
-      {/*<Contact />*/}
       {/*<AppContainer />*/}
 
         <Section sectionName={"Profile"} >
@@ -50,8 +50,8 @@ function App() {
     </Section>
     <Section sectionName={"Contact"}>
         <section>
-            <h3>Want to get in touch?</h3>
-            <a href="mailto:tylerbriskie@gmail.com"><h4>tylerbriskie@gmail.com</h4></a>
+            <Contact />
+
 
 
         </section>
