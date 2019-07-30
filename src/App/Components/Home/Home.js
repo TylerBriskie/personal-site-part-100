@@ -2,12 +2,17 @@ import React, {Component} from 'react';
 import './Home.scss';
 import 'react-sticky-header/styles.css';
 import StickyHeader from 'react-sticky-header';
-import {Link, animateScroll as scroll } from 'react-scroll';
+import {Link, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 export default class Home extends Component {
     scrollToTop = () => {
         scroll.scrollToTop();
     };
+    goToSkills = () => {
+        var element = document.getElementById("Skills-Section");
+
+        element.scrollIntoView();
+    }
     render(){
         return(
             <div className={"App-Home"}>
@@ -50,7 +55,8 @@ export default class Home extends Component {
                                       spy={true}
                                       smooth={true}
                                       offset={0}
-                                      duration={350}>
+                                      duration={350}
+                                        onSetActive={this.goToSkills}>
                                     Skills
                                 </Link>
                                 <Link activeClass={"active"}

@@ -15,7 +15,7 @@ export default class Skills extends Component {
 
     render() {
         return (<Section sectionName={"Skills"}>
-            <section>
+            <section id={"Skills-Section"}>
                 <h3>Skills</h3>
                 <div className={"skill-columns"}>
                     <div className={"skill-bars"}>

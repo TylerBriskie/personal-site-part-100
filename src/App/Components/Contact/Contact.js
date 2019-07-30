@@ -6,6 +6,7 @@ import octocat from '../../../assets/octocat.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Contact = () => {
+
     return <div className={"App-Contact"}>
         <p>Want to get in touch?</p>
         <div className={"contact-info-container"}>

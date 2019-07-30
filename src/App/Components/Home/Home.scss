@@ -3,6 +3,16 @@
 .App-Home{
   color: aliceblue;
   width: 100%;
+  p {
+    margin-bottom: 2em;
+  }
+  .call-to-action{
+    border: solid white 2px;
+    padding: 1em;
+    border-radius: 20px;
+    background-color: $white;
+    color: $primary-0;
+  }
 
   ul {
     list-style: none;
@@ -24,6 +34,7 @@
       height: 0px !important;
     }
     .ReactStickyHeader_fixed{
+      height: 140px;
       //-webkit-transition: background-color.5s;
       //-moz-transition: background-color .5s;
       //-o-transition: background-color .5s;
@@ -52,6 +63,7 @@
   .ReactStickyHeader_root.is-sticky{
 
     .ReactStickyHeader_fixed{
+      height: 140px;
           .call-to-action{
             display: none;
           }
@@ -82,10 +94,7 @@
               border-bottom: 3px solid navajowhite;
               color: navajowhite;
             }
-            a:hover{
-              font-size: 125%;
-              color: $tertiary-2-2;
-            }
+
           }
       }
     }
