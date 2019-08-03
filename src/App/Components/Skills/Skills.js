@@ -5,14 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { Progress } from 'react-sweet-progress';
 import "react-sweet-progress/lib/style.css";
 
-export default class Skills extends Component {
-    componentDidMount(){
-    }
-
-    incrementTo(number){
-
-    }
-
+class Skills extends Component {
     render() {
         return (<Section sectionName={"Skills"}>
             <section id={"Skills-Section"}>
@@ -26,7 +19,6 @@ export default class Skills extends Component {
                                     <Progress theme={{
                                         success: {
                                             symbol: '‍',
-                                            // trailColor: 'rgb(255, 252, 252)',
                                             color: 'rgb(0, 255, 233)'
                                         }}} percent={88} status={"success"} />
                                 </ScrollAnimation>
@@ -117,3 +109,5 @@ export default class Skills extends Component {
         </Section>)
     }
 }
+
+export default Skills;
