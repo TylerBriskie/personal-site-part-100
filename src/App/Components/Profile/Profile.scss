@@ -1,0 +1,40 @@
+@import '../../shared';
+
+#Profile-Section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .image-column {
+    display: flex;
+    border-right: $primary-1 solid 3px;
+    flex-direction: column;
+    align-items: center;
+
+      width: 33vw;
+      img {
+        height: 170px;
+      }
+    span {
+      display: block;
+      font-family: $font-text;
+      font-size: 50%;
+      padding: .25em;
+      width: 200px;
+      border: 1px solid black;
+      border-radius: 15px;
+      margin-bottom: .5em;
+    }
+  }
+  .info-column {
+      p {
+        margin: 2em .5em;
+      }
+      text-align: justify;
+      text-justify: inter-word;
+      padding: 2.5em;
+      font-size: 80%;
+      width: 66vw;
+  }
+
+}

@@ -28,12 +28,12 @@ class App extends React.Component {
             <div className="App">
                 <Home sections = {this.sections}/>
 
-                <Profile ref={(section) => { this.sections.Profile = section; }} />
+                <Profile ref={(section) => { this.sections.Profile = section; }}  sections = {this.sections} />
                 <Experience ref={(section) => { this.sections.Experience = section; }}/>
                 <Skills ref={(section) => { this.sections.Skills = section; }}/>
                 <Projects ref={(section) => { this.sections.Projects = section; }}/>
                 <Education ref={(section) => { this.sections.Education = section; }}/>
-                <Contact ref={(section) => { this.sections.Contact = section; }}/>
+                <Contact ref={(section) => { this.sections.Contact = section; }} />
 
                 <Footer/>
             </div>

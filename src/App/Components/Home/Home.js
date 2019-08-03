@@ -7,17 +7,9 @@ import scrollToComponent from 'react-scroll-to-component';
 
 export default class Home extends Component {
     componentDidMount() {
-
         scrollToComponent(this.props.sections.Home, { offset: 0, align: 'middle', duration: 100, ease:'inCirc'});
     }
-    // scrollToTop = () => {
-    //     scroll.scrollToTop();
-    // };
-    // goToSkills = () => {
-    //     var element = document.getElementById("Skills-Section");
-    //
-    //     element.scrollIntoView();
-    // }
+
 
     render(){
         return(
@@ -75,7 +67,7 @@ export default class Home extends Component {
 
                         </p>
 
-                    </section>sectio           </StickyHeader>
+                    </section>           </StickyHeader>
 
             </div>
         );

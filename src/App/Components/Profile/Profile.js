@@ -2,112 +2,42 @@ import React, {Component} from 'react';
 import './Profile.scss';
 import Section from '../Section/Section.js';
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import scrollToComponent from "react-scroll-to-component";
+import profilePic from '../../../assets/PictureFramed.png';
 class Profile extends Component {
     render() {
         return (<Section sectionName={"Profile"} >
-            <section>
-                <h1>LANDING PAGE</h1>
-                <button>call to action</button>
+            <section id={"Profile-Section"}>
+                <div className={"image-column"}>
+                    <img src={profilePic} alt=""/>
+                    <h4>Tyler Briskie</h4>
+                    <span>Web Developer.</span>
+                    <span>Computer Nerd.</span>
+                    <span>Guitar Hero.</span>
+                    <span>Graphic Designer.</span>
+                    <span>Cruciverbalist.</span>
+                </div>
+                <div className={"info-column"}>
 
-                <p>And now, in the spirit of the season: start shopping. And for every dollar of Krusty
-                    merchandise you buy, I will be nice to a sick kid. For legal purposes, sick kids may include
-                    hookers with a cold. Look out, Itchy! He's Irish!</p>
+
+                  <p>
+                      I work as a software engineer in Denver, Colorado.
+                  </p>
+
+                    <p>
+                        In 2016, after a decade of working in the music business, I decided to learn to code.  I attended galvanize's web development boot camp and have been working as a software engineer ever since.
+                    </p>
+                    <p>
+                        I still love playing music, but now I spend most of my time learning new web frameworks and javascript libraries.
+                    </p>
+
+
+                </div>
+
+
+
             </section>
-                {/*<div className={"skill-columns"}>*/}
-                    {/*<div className={"skill-bars"}>*/}
-                        {/*<ul>*/}
-                            {/*<li>*/}
-                                {/*<span>Javascript</span>*/}
-                                {/*<ScrollAnimation animateIn={"bounceInLeft"}>*/}
-                                    {/*<Progress theme={{*/}
-                                        {/*success: {*/}
-                                            {/*symbol: '‍',*/}
-                                            {/*color: 'rgb(0, 255, 233)'*/}
-                                        {/*}}} percent={88} status={"success"} />*/}
-                                {/*</ScrollAnimation>*/}
-                            {/*</li>*/}
-                            {/*<li>*/}
-                                {/*<span>React.JS</span>*/}
-                                {/*<ScrollAnimation animateIn={"bounceInLeft"}>*/}
-                                    {/*<Progress theme={{*/}
-                                        {/*success: {*/}
-                                            {/*symbol: '‍',*/}
-                                            {/*// trailColor: 'rgb(255, 252, 252)',*/}
-                                            {/*color: 'rgb(0, 255, 233)'*/}
-                                        {/*}}} percent={88} status={"success"} />*/}
-                                {/*</ScrollAnimation>*/}
-                            {/*</li>*/}
-                            {/*<li>*/}
-                                {/*<span>Node</span>*/}
-                                {/*<ScrollAnimation animateIn={"bounceInLeft"}>*/}
-                                    {/*<Progress theme={{*/}
-                                        {/*success: {*/}
-                                            {/*symbol: '‍',*/}
-                                            {/*color: 'rgb(0, 188, 222)'*/}
-                                        {/*}}} percent={66} status={"success"} />*/}
 
-                                {/*</ScrollAnimation>*/}
-                            {/*</li>*/}
-                            {/*<li>*/}
-                                {/*<span>Webpack</span>*/}
-                                {/*<ScrollAnimation animateIn={"bounceInLeft"}>*/}
-                                    {/*<Progress theme={{*/}
-                                        {/*success: {*/}
-                                            {/*symbol: '‍',*/}
-                                            {/*color: 'rgb(0, 188, 222)'*/}
-                                        {/*}}} percent={66} status={"success"} />*/}
-
-                                {/*</ScrollAnimation>*/}
-                            {/*</li>*/}
-                            {/*<li>*/}
-                                {/*<span>Java</span>*/}
-                                {/*<ScrollAnimation animateIn={"bounceInLeft"}>*/}
-                                    {/*<Progress theme={{*/}
-                                        {/*success: {*/}
-                                            {/*symbol: '‍',*/}
-                                            {/*color: 'rgb(0, 188, 222)'*/}
-                                        {/*}}} percent={66} status={"success"} />*/}
-
-                                {/*</ScrollAnimation>*/}
-                            {/*</li>*/}
-                            {/*<li>*/}
-                                {/*<span>Spring</span>*/}
-                                {/*<ScrollAnimation animateIn={"bounceInLeft"}>*/}
-                                    {/*<Progress theme={{*/}
-                                        {/*success: {*/}
-                                            {/*symbol: '‍',*/}
-                                            {/*color: 'rgb(85, 106, 180)'*/}
-                                        {/*}}} percent={45} status={"success"} />*/}
-                                {/*</ScrollAnimation>*/}
-                            {/*</li>*/}
-                            {/*<li>*/}
-                                {/*<span>Postgres</span>*/}
-                                {/*<ScrollAnimation animateIn={"bounceInLeft"}>*/}
-                                    {/*<Progress theme={{*/}
-                                        {/*success: {*/}
-                                            {/*symbol: '‍',*/}
-                                            {/*color: 'rgb(85, 104, 180)'*/}
-                                        {/*}}} percent={45} status={"success"} />*/}
-
-                                {/*</ScrollAnimation>*/}
-                            {/*</li>*/}
-                            {/*<li>*/}
-                                {/*<span>MongoDB</span>*/}
-                                {/*<ScrollAnimation animateIn={"bounceInLeft"}>*/}
-                                    {/*<Progress theme={{*/}
-                                        {/*success: {*/}
-                                            {/*symbol: '‍',*/}
-                                            {/*color: 'rgb(222, 44, 222)'*/}
-                                        {/*}}} percent={33} status={"success"} />*/}
-
-                                {/*</ScrollAnimation>*/}
-                            {/*</li>*/}
-                        {/*</ul>*/}
-
-
-                    {/*</div>*/}
-                {/*</div>*/}
 
         </Section>)
     }
