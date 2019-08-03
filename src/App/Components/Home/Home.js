@@ -2,98 +2,66 @@ import React, {Component} from 'react';
 import './Home.scss';
 import 'react-sticky-header/styles.css';
 import StickyHeader from 'react-sticky-header';
-import {Link, animateScroll as scroll, scrollSpy } from 'react-scroll';
+// import {Link, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import scrollToComponent from 'react-scroll-to-component';
 
 export default class Home extends Component {
     componentDidMount() {
-        console.log('Home props', this.props);
-        scrollToComponent(this.Home, { offset: 0, align: 'middle', duration: 2000, ease:'inCirc'});
-    }
-    scrollToTop = () => {
-        scroll.scrollToTop();
-    };
-    goToSkills = () => {
-        var element = document.getElementById("Skills-Section");
 
-        element.scrollIntoView();
+        scrollToComponent(this.props.sections.Home, { offset: 0, align: 'middle', duration: 100, ease:'inCirc'});
     }
+    // scrollToTop = () => {
+    //     scroll.scrollToTop();
+    // };
+    // goToSkills = () => {
+    //     var element = document.getElementById("Skills-Section");
+    //
+    //     element.scrollIntoView();
+    // }
 
     render(){
         return(
             <div className={"App-Home"}>
-                <StickyHeader ref={(section) => { this.Home = section; }}
+                <StickyHeader ref={(section) => { this.props.sections.Home = section; }}
                     // This is the sticky part of the header.
                     header={
                         <div className="Header_root">
-                            <h1 className="Header_title" onClick={()=> scrollToComponent(this.Home, {})}>TYLER BRISKIE</h1>
+                            <h1 className="Header_title" onClick={()=> scrollToComponent(this.props.sections.Home, {duration: 300})}>TYLER BRISKIE</h1>
                             <p>Web Developer.</p>
-                            <Link className={"call-to-action"}
-                                activeClass={"active"}
-                                to={"Profile"}
-                                spy={true}
-                                smooth={true}
-                                offset={0}
-                                duration={350}
-                            >
+                            <button
+                                    className={"call-to-action"}
+                                    onClick={()=> scrollToComponent(this.props.sections.Profile, {duration: 300})}>
                                 Nice To Meet You
-                            </Link>
+                            </button>
 
                             <ul className="Header_links" >
-                                {/*<button onClick={() => scrollToComponent(this.Profile, { offset: 0, align: 'top', duration: 1500})}>Go To Profile</button>*/}
-                                <Link
-                                    onClick={() => scrollToComponent(this.props.sections.Profile, { offset: 0, align: 'top', duration: 350})}
-                                    // activeClass={"active"}
-                                    //   to={"Profile"}
-                                    //   spy={true}
-                                    //   smooth={true}
-                                    //   offset={0}
-                                    //   duration={350}
-                                >
+                                <li
+                                    onClick={()=> scrollToComponent(this.props.sections.Profile, {duration: 300})}>
                                     Profile
-                                </Link>
-                                <Link activeClass={"active"}
-                                      to={"Experience"}
-                                      spy={true}
-                                      smooth={true}
-                                      offset={0}
-                                      duration={350}>
+                                </li>
+                                <li
+                                    onClick={()=> scrollToComponent(this.props.sections.Experience, {duration: 300})}>
                                     Experience
-                                </Link>
-                                <Link activeClass={"active"}
-                                      to={"Skills"}
-                                      spy={true}
-                                      smooth={true}
-                                      offset={0}
-                                      duration={350}
-                                        onSetActive={this.goToSkills}>
+                                </li>
+                                <li
+                                    onClick={()=> scrollToComponent(this.props.sections.Skills, {duration: 300})}>
                                     Skills
-                                </Link>
-                                <Link activeClass={"active"}
-                                      to={"Projects"}
-                                      spy={true}
-                                      smooth={true}
-                                      offset={0}
-                                      duration={350}>
-                                    Projects
-                                </Link>
-                                <Link activeClass={"active"}
-                                      to={"Education"}
-                                      spy={true}
-                                      smooth={true}
-                                      offset={0}
-                                      duration={350}>
-                                    Education
-                                </Link>
-                                <Link activeClass={"active"}
-                                      to={"Contact"}
-                                      spy={true}
-                                      smooth={true}
-                                      offset={0}
-                                      duration={350}>
-                                    Contact
-                                </Link>
+                                </li>
+                                <li
 
+                                    onClick={()=> scrollToComponent(this.props.sections.Projects, {duration: 300})}>
+                                    Projects
+                                </li>
+                                <li
+
+                                    onClick={()=> scrollToComponent(this.props.sections.Education, {duration: 300})}>
+                                    Education
+                                </li>
+                                <li
+
+                                    onClick={()=> scrollToComponent(this.props.sections.Contact, {duration: 300})}>
+                                    Contact
+                                </li>
 
                             </ul>
                         </div>
@@ -107,8 +75,7 @@ export default class Home extends Component {
 
                         </p>
 
-                    </section>
-                </StickyHeader>
+                    </section>sectio           </StickyHeader>
 
             </div>
         );
