@@ -1,66 +1,44 @@
 import React from 'react';
-import './App.scss';
-// import Header from './Components/Header/Header.js';
-import Home from './Components/Home/Home.js';
-import Footer from './Components/Footer/Footer.js';
-import Section from './Components/Section/Section.js';
-import Skills from './Components/Skills/Skills.js';
+
+import Section from './Components/Section/Section';
+import Home from './Components/Home/Home';
+import Profile from './Components/Profile/Profile';
+import Skills from './Components/Skills/Skills';
+import Experience from './Components/Experience/Experience';
+import Education from './Components/Education/Education';
+import Projects from './Components/Projects/Projects';
+import Footer from './Components/Footer/Footer';
+
 import Contact from './Components/Contact/Contact';
-function App() {
-  return (
-    <div className="App">
-      {/*<Header />*/}
-      <Home />
-      {/*<Resume />*/}
-      {/*<Projects />*/}
-      {/*<Music />*/}
-      {/*<AppContainer />*/}
 
-        <Section sectionName={"Profile"} >
-          <section>
-              <h1>LANDING PAGE</h1>
-              <button>call to action</button>
+import './App.scss';
+import scrollToComponent from "react-scroll-to-component";
 
-              <p>And now, in the spirit of the season: start shopping. And for every dollar of Krusty merchandise you buy, I will be nice to a sick kid. For legal purposes, sick kids may include hookers with a cold. Look out, Itchy! He's Irish!</p>
-          </section>
-        </Section>
-        <Section sectionName={"Experience"} theme={"dark"}>
-            <section>
-                <h1>Resume</h1>
+class App extends React.Component {
+    sections = {
+        Profile: "Profile",
+        Experience: "Experience",
+        Skills: "Skills",
+        Education: "Education",
+        Projects: "Projects",
+        Contact: "Contact"
+    };
+    render() {
+        return (
+            <div className="App">
+                <Home sections = {this.sections}/>
 
-                <p>And now, in the spirit of the season: start shopping. And for every dollar of Krusty merchandise you buy, I will be nice to a sick kid. For legal purposes, sick kids may include hookers with a cold. Look out, Itchy! He's Irish!</p>
-            </section>
-        </Section>
-        <Skills />
-    <Section sectionName={"Projects"}>
+                <Profile ref={(section) => { this.sections.Profile = section; }} />
+                <Experience ref={(section) => { this.sections.Profile = section; }}/>
+                <Skills ref={(section) => { this.sections.Profile = section; }}/>
+                <Projects ref={(section) => { this.sections.Profile = section; }}/>
+                <Education ref={(section) => { this.sections.Profile = section; }}/>
+                <Contact ref={(section) => { this.sections.Profile = section; }}/>
 
-        <section>
-            <h1>Projects PAGE</h1>
-            <button>call to action</button>
-
-            <p>And now, in the spirit of the season: start shopping. And for every dollar of Krusty merchandise you buy, I will be nice to a sick kid. For legal purposes, sick kids may include hookers with a cold. Look out, Itchy! He's Irish!</p>
-        </section>
-    </Section>
-    <Section sectionName={"Education"}>
-        <section>
-            <h1>Education PAGE</h1>
-            <button>call to action</button>
-            <p>And now, in the spirit of the season: start shopping. And for every dollar of Krusty merchandise you buy, I will be nice to a sick kid. For legal purposes, sick kids may include hookers with a cold. Look out, Itchy! He's Irish!</p>
-        </section>
-    </Section>
-    <Section sectionName={"Contact"}>
-        <section>
-            <Contact />
-
-
-
-        </section>
-    </Section>
-
-
-        <Footer />
-    </div>
-  );
+                <Footer/>
+            </div>
+        );
+    }
 }
 
 export default App;

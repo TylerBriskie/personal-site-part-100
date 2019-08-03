@@ -3,8 +3,13 @@ import './Home.scss';
 import 'react-sticky-header/styles.css';
 import StickyHeader from 'react-sticky-header';
 import {Link, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import scrollToComponent from 'react-scroll-to-component';
 
 export default class Home extends Component {
+    componentDidMount() {
+        console.log('Home props', this.props);
+        scrollToComponent(this.Home, { offset: 0, align: 'middle', duration: 2000, ease:'inCirc'});
+    }
     scrollToTop = () => {
         scroll.scrollToTop();
     };
@@ -13,14 +18,15 @@ export default class Home extends Component {
 
         element.scrollIntoView();
     }
+
     render(){
         return(
             <div className={"App-Home"}>
-                <StickyHeader
+                <StickyHeader ref={(section) => { this.Home = section; }}
                     // This is the sticky part of the header.
                     header={
                         <div className="Header_root">
-                            <h1 className="Header_title" onClick={this.scrollToTop}>TYLER BRISKIE</h1>
+                            <h1 className="Header_title" onClick={()=> scrollToComponent(this.Home, {})}>TYLER BRISKIE</h1>
                             <p>Web Developer.</p>
                             <Link className={"call-to-action"}
                                 activeClass={"active"}
@@ -33,13 +39,17 @@ export default class Home extends Component {
                                 Nice To Meet You
                             </Link>
 
-                            <ul className="Header_links">
-                                <Link activeClass={"active"}
-                                      to={"Profile"}
-                                      spy={true}
-                                      smooth={true}
-                                      offset={0}
-                                      duration={350}>
+                            <ul className="Header_links" >
+                                {/*<button onClick={() => scrollToComponent(this.Profile, { offset: 0, align: 'top', duration: 1500})}>Go To Profile</button>*/}
+                                <Link
+                                    onClick={() => scrollToComponent(this.props.sections.Profile, { offset: 0, align: 'top', duration: 350})}
+                                    // activeClass={"active"}
+                                    //   to={"Profile"}
+                                    //   spy={true}
+                                    //   smooth={true}
+                                    //   offset={0}
+                                    //   duration={350}
+                                >
                                     Profile
                                 </Link>
                                 <Link activeClass={"active"}
