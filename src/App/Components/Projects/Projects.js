@@ -6,7 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 class Projects extends Component {
     render() {
         return (<Section sectionName={"Projects"}>
-            <section>
+            <section id={"Projects-Section"}>
                 <h1>Projects PAGE</h1>
 
                 <p>And now, in the spirit of the season: start shopping. And for every dollar of Krusty

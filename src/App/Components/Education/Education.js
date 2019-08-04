@@ -7,7 +7,9 @@ class Education extends Component {
     render() {
         return (<Section sectionName={"Education"} theme={"dark"}>
             <section>
-                <h1>Education PAGE</h1>
+                <ScrollAnimation initiallyVisible={true}animateIn={"zoomOut"} delay={1000} duration={2}>
+                    <h1>Education</h1>
+                </ScrollAnimation>
                 <button>call to action</button>
                 <p>And now, in the spirit of the season: start shopping. And for every dollar of Krusty
                     merchandise you buy, I will be nice to a sick kid. For legal purposes, sick kids may include

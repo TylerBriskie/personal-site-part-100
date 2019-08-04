@@ -21,9 +21,18 @@
       }
     }
     .experience-description{
-      font-size: 70%;
+      font-size: 50%;
       p {
         margin-bottom: 2em;
+      }
+      .techstack{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img {
+          margin: 0 1em;
+          height: 75px;
+        }
       }
     }
 
