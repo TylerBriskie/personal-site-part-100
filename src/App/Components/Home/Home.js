@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './Home.scss';
 import 'react-sticky-header/styles.css';
 import StickyHeader from 'react-sticky-header';
-// import {Link, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import {Link, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import scrollToComponent from 'react-scroll-to-component';
 
 export default class Home extends Component {
@@ -27,33 +27,84 @@ export default class Home extends Component {
                             </button>
 
                             <ul className="Header_links" >
-                                <li
-                                    onClick={()=> scrollToComponent(this.props.sections.Profile, {duration: 300})}>
+                                {/*<li*/}
+                                    {/*onClick={()=> scrollToComponent(this.props.sections.Profile, {duration: 300})}>*/}
+                                    {/*Profile*/}
+                                {/*</li>*/}
+                                <Link
+                                    smooth={true}
+                                    to={this.props.sections.Profile}
+                                    activeClass={"active"}
+                                    spy={true}
+                                    duration={500}
+                                >
                                     Profile
-                                </li>
-                                <li
-                                    onClick={()=> scrollToComponent(this.props.sections.Experience, {duration: 300})}>
+                                </Link>
+                                <Link
+                                    smooth={true}
+                                    to={this.props.sections.Experience}
+                                    activeClass={"active"}
+                                    spy={true}
+                                    duration={500}
+                                >
                                     Experience
-                                </li>
-                                <li
-                                    onClick={()=> scrollToComponent(this.props.sections.Skills, {duration: 300})}>
+                                </Link>
+                                <Link
+                                    smooth={true}
+                                    to={this.props.sections.Skills}
+                                    activeClass={"active"}
+                                    spy={true}
+                                    duration={500}
+                                >
                                     Skills
-                                </li>
-                                <li
-
-                                    onClick={()=> scrollToComponent(this.props.sections.Projects, {duration: 300})}>
+                                </Link>
+                                <Link
+                                    smooth={true}
+                                    to={this.props.sections.Projects}
+                                    activeClass={"active"}
+                                    spy={true}
+                                    duration={500}
+                                >
                                     Projects
-                                </li>
-                                <li
-
-                                    onClick={()=> scrollToComponent(this.props.sections.Education, {duration: 300})}>
+                                </Link>
+                                <Link
+                                    smooth={true}
+                                    to={this.props.sections.Education}
+                                    activeClass={"active"}
+                                    spy={true}
+                                    duration={500}
+                                >
                                     Education
-                                </li>
-                                <li
-
-                                    onClick={()=> scrollToComponent(this.props.sections.Contact, {duration: 300})}>
+                                </Link>
+                                <Link
+                                    // onClick={()=> scrollToComponent(this.props.sections.Contact, {duration: 300})}
+                                    to={this.props.sections.Contact}
+                                    activeClass={"active"}
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
                                     Contact
-                                </li>
+                                </Link>
+                                {/*<li*/}
+                                    {/*onClick={()=> scrollToComponent(this.props.sections.Skills, {duration: 300})}>*/}
+                                    {/*Skills*/}
+                                {/*</li>*/}
+                                {/*<li*/}
+
+                                    {/*onClick={()=> scrollToComponent(this.props.sections.Projects, {duration: 300})}>*/}
+                                    {/*Projects*/}
+                                {/*</li>*/}
+                                {/*<li*/}
+
+                                    {/*onClick={()=> scrollToComponent(this.props.sections.Education, {duration: 300})}>*/}
+                                    {/*Education*/}
+                                {/*</li>*/}
+                                {/*<li*/}
+
+                                    {/*onClick={()=> scrollToComponent(this.props.sections.Contact, {duration: 300})}>*/}
+                                    {/*Contact*/}
+                                {/*</li>*/}
 
                             </ul>
                         </div>
