@@ -1,0 +1,35 @@
+#Projects-Section {
+  .single-project-view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    aside {
+      width: 30%;
+    }
+    article {
+      display: flex;
+      flex-direction: row;
+      max-width: 60%;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      img {
+        width: 40%;
+        margin: .5em;
+
+      }
+      img:hover{
+        width: 60%;
+        -webkit-animation-name: image-grow;
+        -webkit-animation-duration: 1s;
+        animation-name: image-grow;
+        animation-duration: 1s;
+      }
+      @keyframes image-grow {
+        from {width: 40%;}
+        to { width: 60%;}
+      }
+    }
+  }
+
+}
