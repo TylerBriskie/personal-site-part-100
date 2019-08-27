@@ -11,6 +11,7 @@ class Profile extends Component {
                 <div className={"image-column"}>
                     <img src={profilePic} alt=""/>
                     <h4>Tyler Briskie</h4>
+
                     <span>Web Developer.</span>
                     <span>Computer Nerd.</span>
                     <span>Guitar Hero.</span>
