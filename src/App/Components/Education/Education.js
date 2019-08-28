@@ -25,7 +25,6 @@ class Education extends Component {
 
                     <ScrollAnimation className="education-description" animateIn={"fadeInRight"}>
                         <p>In the Galvanize Web Development Immersive, I learned web development in JavaScript and Node.js through 1000 hours of dedicated coursework.  The most difficult and rewarding 24 weeks of my life. </p>
-                        <p>1000 hours of coursework dedicated to and JavaScript and node.js</p>
                     </ScrollAnimation>
                 </div>
                 <div className={"education-item"}>
