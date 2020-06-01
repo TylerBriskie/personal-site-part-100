@@ -7,10 +7,42 @@
 }
 
 .vertical-job-selector {
-  border-right: white solid 1px;
-  li {
-    list-style: none;
+  .arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid white; 
   }
+
+  .selected-arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid #3399BF; 
+  }
+
+  border-right: white solid 1px;
+
+  li {
+
+  }
+
+  li.job {
+    border: solid 1px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  li.selected-job {
+    background-color: rgba(255,255,255,.5);
+  }
+
   .experience-subheading {
     display: flex;
     flex-direction: column;
@@ -51,16 +83,20 @@
       }
     }
     .experience-description{
+      padding: 0 3em;
+      img {
+        height: 50px;
+      }
       p {
         margin-bottom: 2em;
       }
       .techstack{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         img {
-          margin: 0 1em;
-          height: 75px;
+          min-height: 100px;
+          max-height: 100px;
         }
       }
     }

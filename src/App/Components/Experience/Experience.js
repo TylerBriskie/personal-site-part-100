@@ -17,6 +17,7 @@ const Experience = () => {
 
     const myJobs = [
         {
+            index: 0,
             companyName: "Presidio",
             companyLogo: presidioLogo,
             title: "Lead Developer",
@@ -33,13 +34,14 @@ const Experience = () => {
             ]
         },
         {
+            index: 1,
             companyName: "Vertafore",
             companyLogo: v4logo,
             title: "Software Development Engineer I",
             dates: "May 2017 - October 2019",
             description: [
                 "Vertafore was my first software job out of coding boot camp. They make software for insurance professionals, and during my time there I was fortunate enough to work on a few different interesting projects.",
-                "Most recently, I worked on an older Java based application, developing new features, addressing bugs and customer escalations, and helping to modernize a 20+ year old solution.",
+                "Most recently, I worked on a 20+ year old Java application working on new feature development, fixing bugs, addressing customer escalations, and helping to modernize a 20+ year old solution.",
                 "Previously, I was part of a multi-team effort to modernize Vertafore's entire platform During this process, I worked on designing APIs in Java / Spring, as well as designing and implementing UI components for a web app to be used by our customers' customers."
             ],
             techStack: [
@@ -60,13 +62,18 @@ const Experience = () => {
         <Section sectionName={"Experience"} theme={"dark"}>
             <ul className="vertical-job-selector">
                 {
+                    
                     myJobs.map((j, index) =>
-                        <li>
-                            <div key={index} className={"experience-subheading"} onClick={() => setJob(myJobs[index])} >
-                                <img src={j.companyLogo} alt="Brand Logo"/>
-                                <span>{j.dates}</span>
-                            </div>
-                        </li>  
+                        {
+                            return (
+                                <li className={job.index === index ? "selected-job job" : "job"} onClick={() => setJob(myJobs[index])} >
+                                    <div key={index} className={"experience-subheading"} >
+                                        <img src={j.companyLogo} alt="Brand Logo"/>
+                                        <span>{j.dates}</span>
+                                    </div>
+                                    <div className={job.index === index ? "selected-arrow-left" : "arrow-left"}></div>
+                                </li>  
+                            )}
                     
                     )
                 }
@@ -77,13 +84,10 @@ const Experience = () => {
                     <h1>Experience</h1>
                 </ScrollAnimation>
                 <div className={"experience-item"}>
-                    <ScrollAnimation animateIn={"bounceInLeft"} duration={.65}>
-                        <div className={"experience-subheading"}>
-                            <img src={job.companyLogo} alt="Company Logo"/>
-                            <span>{job.dates}</span>
-                        </div>
-                    </ScrollAnimation>
+
                     <div className={"experience-description"}>
+                        <img src={job.companyLogo} alt="Company Logo"/>
+                    
                         {
                             job.description.map((p, i) => 
                                 <ScrollAnimation key={i} animateIn={"fadeInRight"} animateOut={"fadeOutRight"}>
