@@ -16,23 +16,20 @@ class Profile extends Component {
                     <span>Computer Nerd.</span>
                     <span>Guitar Hero.</span>
                     <span>Graphic Designer.</span>
-                    <span>Cruciverbalist.</span>
+                    <span>Bicycle Enthusiast.</span>
                 </div>
                 <div className={"info-column"}>
-
-
-                  <p>
-                      I work as a software engineer in Denver, Colorado.
-                  </p>
+                    <p>
+                        I work as a software engineer in Denver, Colorado.
+                    </p>
 
                     <p>
                         In 2016, after a decade of working in the music business, I decided to learn to code.  I attended galvanize's web development boot camp and have been working as a software engineer ever since.
                     </p>
+
                     <p>
                         I still love playing music, but now I spend most of my time learning new web frameworks and javascript libraries.
                     </p>
-
-
                 </div>
 
 

@@ -1,11 +1,41 @@
 @import '../../shared';
 
+#Experience {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.vertical-job-selector {
+  border-right: white solid 1px;
+  li {
+    list-style: none;
+  }
+  .experience-subheading {
+    display: flex;
+    flex-direction: column;
+
+    margin: 2em;
+    span {
+      margin-top: 2em;
+      font-size: 50%;
+    }
+
+    img {
+      width: 200px;
+    }
+  }
+}
 #Experience-Section {
+  hr {
+    margin: 20px 0;
+
+  }
   .experience-item {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start ;
     .experience-subheading {
       display: flex;
       flex-direction: column;

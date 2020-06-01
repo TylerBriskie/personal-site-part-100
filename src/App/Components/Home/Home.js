@@ -27,10 +27,7 @@ export default class Home extends Component {
                             </button>
 
                             <ul className="Header_links" >
-                                {/*<li*/}
-                                    {/*onClick={()=> scrollToComponent(this.props.sections.Profile, {duration: 300})}>*/}
-                                    {/*Profile*/}
-                                {/*</li>*/}
+
                                 <Link
                                     smooth={true}
                                     to={this.props.sections.Profile}
