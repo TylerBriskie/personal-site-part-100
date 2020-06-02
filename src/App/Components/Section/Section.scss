@@ -21,9 +21,27 @@
   hr {
     width: 50%;
   }
+  li.selected-item {
+    background-color: rgba(54,99,142, 0.8);
+    color: $white;
 
+  }
+
+
+  .selected-arrow-left {
+    border-right:10px solid white; 
+
+  }
 }
 .App-Section.dark {
+
   background-color: $primary-1;
   color: $white;
+    
+  li.selected-item {
+    background-color: rgba(255,255,255, 0.3);
+  }
+
+
+
 }

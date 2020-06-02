@@ -19,13 +19,12 @@ const Experience = () => {
     const myJobs = [
         {
             index: 0,
-            companyName: "Presidio",
             thumbnail: presidioLogo,
             title: "Lead Developer",
             subheading: "November 2019 - April 2020",
             description: [
                 "At Presidio, I worked as a team of one - I was the sole developer, and functioned as my own QA, product owner, DBA, and dev ops engineer. ",
-                "I worked on a web app used by cyber security analysts and assessors to catalog their clients' security vulnerabilities, as well as exporting the data into a PDF deliverable to the client with their recommendations for moving forward.",
+                "I worked on a web app used by cyber security analysts and assessors to catalog their clients' security vulnerabilities, and export their findings into a PDF to deliver to the client.",
                 "While I mostly worked on new feature development, I was also responsible for handling some user escalations with the existing platform, as well as helping new users get access to the correct permissions and clients.  I used Angular, PHP / Laravel, and MariaDB extensively on this app, as well as Duo two-factor authentication."
             ],
             techStack: [
@@ -36,7 +35,6 @@ const Experience = () => {
         },
         {
             index: 1,
-            companyName: "Vertafore",
             thumbnail: v4logo,
             title: "Software Development Engineer I",
             subheading: "May 2017 - October 2019",
@@ -73,7 +71,7 @@ const Experience = () => {
 
                     <div className={"experience-description"}>
                         <img src={job.thumbnail} alt="Company Logo"/>
-                    
+                        <h6>{job.title}</h6>
                         {
                             job.description.map((p, i) => 
                                 <ScrollAnimation key={i} animateIn={"fadeInRight"} animateOut={"fadeOutRight"}>

@@ -21,11 +21,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    aside {
-      width: 60%;
-
-    }
+    
     article {
+      margin-left: 2em;
+      width: 60%;
+    }
+
+    aside {
       display: flex;
       flex-direction: column;
       max-width: 30%;
