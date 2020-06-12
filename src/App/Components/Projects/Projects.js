@@ -19,7 +19,8 @@ const Projects = () => {
         {
             index: 0,
             name: 'Propane Ipsum',
-            url: "https://propane-ipsum.herokuapp.com",
+            deploymentUrl: "https://propane-ipsum.herokuapp.com",
+            githubLink: "https://github.com/tylerbriskie/propane-ipsum",
             linkText: "Heroku Deployment Link",
             subheading: "Ipsum Generator",
             description: [
@@ -37,6 +38,7 @@ const Projects = () => {
             index: 1,
             name: 'Groupie',
             subheading: "Mobile app to help musicians find new collaborators",
+            githubLink: "https://github.com/tylerbriskie/groupieCLIENT",
             description: [
                 "Groupie is 'Tinder for musicians'.  It allows users to browse through other local musicians by swiping left to reject or right to make a connection.",
                 "Users can add clips from YouTube or SoundCloud, as well as filter by instrument or genre.  Once a mutual connection is made, the app displays the matched users contact info.",
@@ -67,14 +69,19 @@ const Projects = () => {
                 <article>
                     <h1>{selectedProject.name}</h1>
                     {
-                        selectedProject.url ?
-                            <a target="_blank" href={selectedProject.url}>       
-                                {selectedProject.linkText}
-                            </a>
-                            :
-                            <h6>{selectedProject.linkText}</h6>
+                        // DEPLOYMENT LINK
+                        <a target="_blank" href={selectedProject.deploymentUrl}>       
+                            {selectedProject.linkText}
+                        </a>
+                            
                     }
+                    <br />
+     
 
+                    <a target="_blank" href={selectedProject.githubLink}>       
+                        Github Repo
+                    </a>
+                        
                     {
                             selectedProject.description.map((p, i) => 
                                 <ScrollAnimation key={i} animateIn={"fadeInRight"} animateOut={"fadeOutRight"}>
